@@ -14,8 +14,6 @@ table_style = {
     "heading_row_height": 40,
     "width": 500,
     "column_spacing": 100
-    # "show_checkbox_column": True
-    # "heading_text_style": ft.TextStyle()
 }
 
 

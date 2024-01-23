@@ -96,14 +96,6 @@ class BaseChart(ft.LineChart):
 
         self.initial_data_points()
 
-        # min_points = min(self.points, key=lambda p: p.y) if self.points else None
-        # max_points = max(self.points, key=lambda p: p.y) if self.points else None
-
-        # self.min_y = round((int(min_points.y) - 5) / 10) * 10 if self.points else None
-        # self.max_y = round((int(max_points.y) + 5) / 10) * 10 if self.points else None
-
-        # print(f"Min: {self.min_y}, Max: {self.max_y}")
-
         self.line.data_points = self.points
         self.data_series = [self.line]
 
@@ -118,7 +110,6 @@ class BaseChart(ft.LineChart):
 
 graph_style: dict = {
     "expand": 1,
-    # "bgcolor:": "white",
     "border_radius": 10,
     "padding": 30
 }
@@ -190,7 +181,6 @@ class Dashboard(ft.Container):
                         self.add_weight_button
                     ]
                 )
-                # self.add_weight_button
             ]
         )
 
@@ -269,10 +259,4 @@ def homepage(page: ft.Page, params, basket):
             navbar
         ],
     )
-    # )
 
-#     page.update()
-#
-#
-# if __name__ == "__main__":
-#     ft.app(target=main)

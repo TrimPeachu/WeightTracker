@@ -123,8 +123,6 @@ def home_page(page: ft.Page, params, basket):
 
     new_weight = ft.TextField(width=200, label="Enter weight", keyboard_type=ft.KeyboardType.NUMBER)
 
-    # chart = draw_chart(weight_data, weights)
-
     chart_c = WeightChart()
 
     return ft.View(

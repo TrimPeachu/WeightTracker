@@ -7,7 +7,6 @@ urlpatterns = [
     path('', views.getUsers),
     path('users/', views.getUsers),
     path('user/<str:pk>/', views.getUser),
-    # path('login/', views.loginUser),
     path('login/<str:username>/<str:password>/', views.loginUser),
     path('users/create/', views.createUser),
     path('user/<str:pk>/update/', views.updateUser),

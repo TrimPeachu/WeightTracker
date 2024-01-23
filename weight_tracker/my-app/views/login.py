@@ -93,7 +93,6 @@ def login_page(page: ft.Page, params, basket):
                                 )
                             ]
                         ),
-                        # ft.Divider(height=120, color='transparent'),
                         ft.Row(
                             alignment="center",
                             controls=[

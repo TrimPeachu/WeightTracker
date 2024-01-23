@@ -44,9 +44,9 @@ def updateUser(request, pk):
     serializer = UserSerializer(instance=user, data=request.data, many=False)
     if serializer.is_valid():
         serializer.save()
-        return Response(f"Updated {user.name}")
+        return Response(f"Updated {user}")
     else:
-        return Response(f"Error updating {user.name}", status=400)
+        return Response(f"Error updating {user}", status=400)
 
 
 @api_view(['DELETE'])
@@ -54,8 +54,6 @@ def deleteUser(request, pk):
     user = User.objects.get(id=pk)
     user.delete()
     return Response(f"Deleted user {user.name}")
-
-# weight viewset
 
 @api_view(['GET'])
 def getWeights(request):

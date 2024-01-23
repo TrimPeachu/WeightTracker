@@ -19,7 +19,6 @@ def register_user(page, username, password, weight_goal, height, age):
     else:
         print("Error")
 
-# def register_page(page: ft.Page):
 def register_page(page: ft.Page, params, basket):
     # def login_page(page: ft.Page):
     icon = "person_2_sharp"
